@@ -7,7 +7,7 @@
 
     <groupId>se.ayoy.maven-plugins</groupId>
     <artifactId>ayoy-license-verifier-maven-plugin</artifactId>
-    <version>1.1.0</version>
+    <version>1.1.1-SNAPSHOT</version>
     <packaging>maven-plugin</packaging>
 
     <name>${project.groupId}:${project.artifactId}</name>
@@ -59,7 +59,7 @@
         </contributor>
     </contributors>
 
-    <scm>
+<!--    <scm>
         <connection>https://github.com/AyoyAB/Ayoy-Maven-License-Verifier-Plugin.git</connection>
         <developerConnection>https://github.com/AyoyAB/Ayoy-Maven-License-Verifier-Plugin.git</developerConnection>
         <url>https://github.com/AyoyAB/Ayoy-Maven-License-Verifier-Plugin.git</url>
@@ -74,7 +74,7 @@
             <id>ossrh</id>
             <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
         </repository>
-    </distributionManagement>
+    </distributionManagement>-->
 
     <dependencies>
         <dependency>
@@ -138,10 +138,10 @@
                 <artifactId>maven-clean-plugin</artifactId>
                 <version>3.1.0</version>
             </plugin>
-            <plugin>
+<!--            <plugin>
                 <artifactId>maven-deploy-plugin</artifactId>
                 <version>3.0.0-M1</version>
-            </plugin>
+            </plugin>-->
             <plugin>
                 <artifactId>maven-install-plugin</artifactId>
                 <version>3.0.0-M1</version>
@@ -153,11 +153,11 @@
             <plugin>
                 <artifactId>maven-resources-plugin</artifactId>
                 <version>3.1.0</version>
-            </plugin>
+            </plugin><!--
             <plugin>
                 <artifactId>maven-site-plugin</artifactId>
                 <version>3.7.1</version>
-            </plugin>
+            </plugin>-->
             <plugin>
                 <artifactId>maven-plugin-plugin</artifactId>
                 <version>3.6.0</version>
@@ -175,23 +175,23 @@
             </plugin>
 
             <!-- Code analysis plugins -->
-            <plugin>
+<!--            <plugin>
                 <groupId>com.github.spotbugs</groupId>
                 <artifactId>spotbugs-maven-plugin</artifactId>
                 <version>3.1.11</version>
                 <configuration>
                     <xmlOutput>true</xmlOutput>
-                    <!-- Optional directory to put findbugs xdoc xml report -->
+                     Optional directory to put findbugs xdoc xml report 
                     <xmlOutputDirectory>target</xmlOutputDirectory>
                     <effort>Max</effort>
                     <threshold>Low</threshold>
                     <failOnError>true</failOnError>
                     <plugins>
-                        <!--<plugin>
+                        <plugin>
                             <groupId>com.h3xstream.findsecbugs</groupId>
                             <artifactId>findsecbugs-plugin</artifactId>
                             <version>1.9.0</version>
-                        </plugin>-->
+                        </plugin>
                     </plugins>
                 </configuration>
                 <executions>
@@ -201,8 +201,8 @@
                         </goals>
                     </execution>
                 </executions>
-            </plugin>
-            <plugin>
+            </plugin>-->
+<!--            <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.0.0-M3</version>
@@ -244,8 +244,8 @@
                 <configuration>
                     <skipInvocation>${skipITs}</skipInvocation>
                 </configuration>
-            </plugin>
-            <plugin>
+            </plugin>-->
+<!--            <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-pmd-plugin</artifactId>
                 <version>3.11.0</version>
@@ -261,8 +261,8 @@
                         </goals>
                     </execution>
                 </executions>
-            </plugin>
-            <plugin>
+            </plugin>-->
+<!--            <plugin>
                 <groupId>org.owasp</groupId>
                 <artifactId>dependency-check-maven</artifactId>
                 <version>5.2.1</version>
@@ -276,8 +276,8 @@
                 <configuration>
                     <suppressionFile>dependency-check-suppress.xml</suppressionFile>
                 </configuration>
-            </plugin>
-            <plugin>
+            </plugin>-->
+<!--            <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-checkstyle-plugin</artifactId>
                 <version>3.0.0</version>
@@ -292,7 +292,7 @@
                     <execution>
                         <phase>process-sources</phase>
                         <goals>
-                            <!-- Enable to break build on error -->
+                             Enable to break build on error 
                             <goal>check</goal>
                             <goal>checkstyle</goal>
                         </goals>
@@ -324,7 +324,7 @@
                     <failOnMissing>true</failOnMissing>
                     <failOnUnknown>true</failOnUnknown>
                 </configuration>
-            </plugin>
+            </plugin>-->
         </plugins>
     </build>
     <profiles>
