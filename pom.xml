@@ -65,16 +65,24 @@
         <url>https://github.com/AyoyAB/Ayoy-Maven-License-Verifier-Plugin.git</url>
     </scm>
 
-    <distributionManagement>
-        <snapshotRepository>
+-->    <distributionManagement>
+<!--        <snapshotRepository>
             <id>ossrh</id>
             <url>https://oss.sonatype.org/content/repositories/snapshots</url>
         </snapshotRepository>
         <repository>
             <id>ossrh</id>
             <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </repository>-->
+        <snapshotRepository>
+            <id>nexus-snapshots</id>
+            <url>${nexusSnapshotsURL}</url>
+        </snapshotRepository>
+        <repository>
+            <id>nexus</id>
+            <url>${nexusRepositoryURL}</url>
         </repository>
-    </distributionManagement>-->
+    </distributionManagement>
 
     <dependencies>
         <dependency>
