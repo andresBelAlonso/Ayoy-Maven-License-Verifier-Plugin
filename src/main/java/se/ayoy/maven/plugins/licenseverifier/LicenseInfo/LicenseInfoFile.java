@@ -19,10 +19,12 @@ import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException; // catching unsupported features
 import se.ayoy.maven.plugins.licenseverifier.LicenseVerifierMojo;
 
+import se.ayoy.maven.plugins.licenseverifier.LicenceFile;
+
 /**
  * Represents the file in which licenses are categorized.
  */
-public class LicenseInfoFile {
+public class LicenseInfoFile extends LicenceFile {
 
     private ArrayList<LicenseInfo> licenseInfos = new ArrayList<LicenseInfo>();
     private Log log;

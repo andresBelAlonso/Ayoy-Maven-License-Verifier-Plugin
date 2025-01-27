@@ -54,9 +54,11 @@
             <name>The MIT License</name>
             <names>
                 <name>The MIT License</name>
+                <name>MIT</name>
             </names>
             <urls>
                 <url>http://code.google.com/p/mockito/wiki/License</url>
+                <url>https://opensource.org/licenses/MIT</url>
             </urls>
         </license>
         <license>
@@ -64,6 +66,15 @@
             <names>
                 <name>Public Domain</name>
             </names>
+        </license>
+        <license>
+            <name>New BSD License</name>
+            <names>
+                <name>New BSD License</name>
+            </names>
+            <urls>
+                <url>"http://www.opensource.org/licenses/bsd-license.php"</url>
+            </urls>
         </license>
     </valid>
     <forbidden>

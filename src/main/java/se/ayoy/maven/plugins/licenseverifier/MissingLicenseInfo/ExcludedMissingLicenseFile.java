@@ -7,6 +7,7 @@ import org.w3c.dom.Document;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
+import se.ayoy.maven.plugins.licenseverifier.LicenceFile;
 import se.ayoy.maven.plugins.licenseverifier.model.AyoyArtifact;
 
 import javax.xml.parsers.DocumentBuilder;
@@ -24,7 +25,7 @@ import se.ayoy.maven.plugins.licenseverifier.LicenseVerifierMojo;
 /**
  * Parses the file for exclusions of missing license information.
  */
-public class ExcludedMissingLicenseFile {
+public class ExcludedMissingLicenseFile extends LicenceFile {
     private ArrayList<ExcludedMissingLicense> missingInfos = new ArrayList<ExcludedMissingLicense>();
     private Log log;
 
