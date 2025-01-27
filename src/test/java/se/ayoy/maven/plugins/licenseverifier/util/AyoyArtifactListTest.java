@@ -4,11 +4,11 @@ import org.apache.maven.artifact.Artifact;
 import org.apache.maven.artifact.DefaultArtifact;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.mockito.runners.MockitoJUnitRunner;
 import se.ayoy.maven.plugins.licenseverifier.model.AyoyArtifact;
 
 import static junit.framework.TestCase.assertEquals;
 import static junit.framework.TestCase.assertTrue;
+import org.mockito.junit.MockitoJUnitRunner;
 
 /**
  * Tests the AyoyArtifactList class.
